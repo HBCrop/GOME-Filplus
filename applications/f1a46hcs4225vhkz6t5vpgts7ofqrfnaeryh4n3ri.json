@@ -1,0 +1,49 @@
+{
+  "Version": "1.3",
+  "ID": "f1a46hcs4225vhkz6t5vpgts7ofqrfnaeryh4n3ri",
+  "Issue Number": "4",
+  "Client": {
+    "Name": "NOAA",
+    "Region": "American Samoa",
+    "Industry": "Environment",
+    "Website": "https://registry.opendata.aws/noaa-oar-arl-nacc-pds/",
+    "Social Media": "https://repository.library.noaa.gov/contact",
+    "Social Media Type": "Other",
+    "Role": "Data Preparer"
+  },
+  "Project": {
+    "Brief history of your project and organization": "We have not stored orders on Filecoin before; this is our first attempt. Our team primarily focuses on research related to public blockchains such as EOS, Filecoin, Bitcoin, Ethereum, and others.",
+    "Is this project associated with other projects/ecosystem stakeholders?": "No",
+    "Describe the data being stored onto Filecoin": "The Global Forecast System (GFS), from the National Centers for Environmental Prediction, provides weather forecast data in netCDF format, including atmospheric and land-soil variables like temperature, wind, precipitation, soil moisture, and ozone. With high spatiotemporal resolution (~13x13 km, 127 vertical levels, hourly), these files support NOAA-EPA’s NACC-Cloud tool and air quality models like the U.S. EPA’s CMAQ, plus other Earth system applications. Updated daily for the 12Z cycle, the dataset offers 24-hour 2D and 3D outputs. The netCDF format is scalable, shareable, and widely used in scientific communities. Additionally, Global Land Surface Datasets (GLSDs) from Hung et al. (2024) match GFS resolution and provide 2020 satellite-based vegetation data (e.g., land type, leaf area index) combined with 2022 GFS meteorology. These daily-resolution files enhance applications like NOAA-ARL’s canopy-app.",
+    "Where was the data currently stored in this dataset sourced from": "AWS Cloud",
+    "How do you plan to prepare the dataset": "We will use the AWS CLI tool to download these raw data files, then use the Singularity tool to create CAR files, and initiate order transactions using Boost.",
+    "Please share a sample of the data (a link to a file, an image, a table, etc., are good ways to do this.)": "https://noaa-oar-arl-nacc-pds.s3.amazonaws.com/index.html\n\naws s3 ls --no-sign-request s3://noaa-oar-arl-nacc-pds/",
+    "Confirm that this is a public dataset that can be retrieved by anyone on the network (i.e., no specific permissions or access rights are required to view the data)": "[x] I confirm",
+    "What is the expected retrieval frequency for this data": "Yearly",
+    "For how long do you plan to keep this dataset stored on Filecoin": "1 to 1.5 years",
+    "In which geographies do you plan on making storage deals": "Asia other than Greater China, Greater China",
+    "How will you be distributing your data to storage providers": "Cloud storage (i.e. S3)",
+    "Please list the provider IDs and location of the storage providers you will be working with. Note that it is a requirement to list a minimum of 5 unique provider IDs, and that your client address will be verified against this list in the future": "f03623232 \nf03644142 \nf03619150\nf03619143\nf03645007",
+    "Can you confirm that you will follow the Fil+ guideline (Data owner should engage at least 4 SPs and no single SP ID should receive >30% of a client's allocated DataCap)": "Yes"
+  },
+  "Datacap": {
+    "Type": "ldn-v3",
+    "Data Type": "Slingshot",
+    "Total Requested Amount": "2.5PiB",
+    "Single Size Dataset": "312.56 TB",
+    "Replicas": 8,
+    "Weekly Allocation": "500TiB"
+  },
+  "Lifecycle": {
+    "State": "Submitted",
+    "Validated At": "",
+    "Validated By": "",
+    "Active": true,
+    "Updated At": "2025-09-08 03:35:28.726676963 UTC",
+    "Active Request ID": "",
+    "On Chain Address": "f1a46hcs4225vhkz6t5vpgts7ofqrfnaeryh4n3ri",
+    "Multisig Address": "false",
+    "edited": false
+  },
+  "Allocation Requests": []
+}
