@@ -1,0 +1,66 @@
+{
+  "Version": "1.3",
+  "ID": "f1lu5uovsrmdva3zafca2b23ofm5tienm6jhx2qja",
+  "Issue Number": "6",
+  "Client": {
+    "Name": "Geoscience and Remote Sensing at Chalmers University of Technology",
+    "Region": "United States",
+    "Industry": "Environment",
+    "Website": "https://registry.opendata.aws/ccic/",
+    "Social Media": "https://github.com/see-geo/ccic",
+    "Social Media Type": "Other",
+    "Role": "Data Preparer"
+  },
+  "Project": {
+    "Brief history of your project and organization": "The Chalmers Cloud Ice Climatology (CCIC) is a novel, deep-learning-based climate record of ice-particle concentrations in the atmosphere. CCIC results are available at high spatial and temporal resolution (0.07° / 3 h from 1983, 0.036° / 30 min from 2000) and thus ideally suited for evaluating high-resolution weather and climate models or studying individual weather systems.",
+    "Is this project associated with other projects/ecosystem stakeholders?": "No",
+    "Describe the data being stored onto Filecoin": "The Chalmers Cloud Ice Climatology (CCIC) is a novel, deep-learning-based climate record of ice-particle concentrations in the atmosphere. CCIC results are available at high spatial and temporal resolution (0.07° / 3 h from 1983, 0.036° / 30 min from 2000) and thus ideally suited for evaluating high-resolution weather and climate models or studying individual weather systems.",
+    "Where was the data currently stored in this dataset sourced from": "AWS Cloud",
+    "How do you plan to prepare the dataset": "First, I downloaded the dataset from aws s3 ls --no-sign-request s3://chalmerscloudiceclimatology/ and categorized it by collection. I then created different directories to categorize the files and packaged them into car files ranging in size from 20GB to 32GB. I then distributed them to the SP via HTTP for storage.",
+    "Please share a sample of the data (a link to a file, an image, a table, etc., are good ways to do this.)": "aws s3 ls --no-sign-request s3://chalmerscloudiceclimatology 262.7213 TiB",
+    "Confirm that this is a public dataset that can be retrieved by anyone on the network (i.e., no specific permissions or access rights are required to view the data)": "[x] I confirm",
+    "What is the expected retrieval frequency for this data": "Yearly",
+    "For how long do you plan to keep this dataset stored on Filecoin": "1.5 to 2 years",
+    "In which geographies do you plan on making storage deals": "North America, South America, Europe, Asia other than Greater China",
+    "How will you be distributing your data to storage providers": "HTTP or FTP server",
+    "Please list the provider IDs and location of the storage providers you will be working with. Note that it is a requirement to list a minimum of 5 unique provider IDs, and that your client address will be verified against this list in the future": "f03289271 Germany\nf03315260 Germany\nf03367915 United States\nf03542777 Vietnam\nf03603117 United States\nf03559187 United States\nf03100006 HongKong\nf03100007 HongKong",
+    "Can you confirm that you will follow the Fil+ guideline (Data owner should engage at least 4 SPs and no single SP ID should receive >30% of a client's allocated DataCap)": "Yes"
+  },
+  "Datacap": {
+    "Type": "ldn-v3",
+    "Data Type": "Slingshot",
+    "Total Requested Amount": "3PiB",
+    "Single Size Dataset": "384TiB",
+    "Replicas": 8,
+    "Weekly Allocation": "1000TiB"
+  },
+  "Lifecycle": {
+    "State": "Granted",
+    "Validated At": "2025-09-15 12:54:10.432373732 UTC",
+    "Validated By": "chenzhi201901",
+    "Active": true,
+    "Updated At": "2025-09-15 12:54:10.432365526 UTC",
+    "Active Request ID": "9ab48737-0c94-46ba-9823-a9fafa207982",
+    "On Chain Address": "f1lu5uovsrmdva3zafca2b23ofm5tienm6jhx2qja",
+    "Multisig Address": "false",
+    "edited": false
+  },
+  "Allocation Requests": [
+    {
+      "ID": "9ab48737-0c94-46ba-9823-a9fafa207982",
+      "Request Type": "First",
+      "Created At": "2025-09-15 12:50:11.144571763 UTC",
+      "Updated At": "2025-09-15 12:50:11.144572592 UTC",
+      "Active": false,
+      "Allocation Amount": "281474976710656 B",
+      "Signers": [
+        {
+          "Github Username": "chenzhi201901",
+          "Signing Address": "f1jwpid6t2bzf6dfyyhsjiaemets53qcgn7lgseyq",
+          "Created At": "2025-09-15 12:54:05.805000000 UTC",
+          "Message CID": "bafy2bzaceduzihyqqa7wloxiibjtms77e7epyuqchiu2lz77r3b4nnq3b56ha"
+        }
+      ]
+    }
+  ]
+}
