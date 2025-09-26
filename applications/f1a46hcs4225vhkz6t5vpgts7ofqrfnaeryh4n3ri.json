@@ -35,11 +35,11 @@
     "Weekly Allocation": "1PiB"
   },
   "Lifecycle": {
-    "State": "ReadyToSign",
-    "Validated At": "2025-09-26 01:46:00.862859259 UTC",
+    "State": "Granted",
+    "Validated At": "2025-09-26 04:41:10.411608196 UTC",
     "Validated By": "chenzhi201901",
     "Active": true,
-    "Updated At": "2025-09-26 01:46:00.862863381 UTC",
+    "Updated At": "2025-09-26 04:41:10.411604352 UTC",
     "Active Request ID": "04c268e4-30a9-431b-bce7-0a770d6dc38a",
     "On Chain Address": "f1a46hcs4225vhkz6t5vpgts7ofqrfnaeryh4n3ri",
     "Multisig Address": "false",
@@ -51,9 +51,16 @@
       "Request Type": "First",
       "Created At": "2025-09-26 01:46:00.862865203 UTC",
       "Updated At": "2025-09-26 01:46:00.862866395 UTC",
-      "Active": true,
+      "Active": false,
       "Allocation Amount": "109951162777600 B",
-      "Signers": []
+      "Signers": [
+        {
+          "Github Username": "chenzhi201901",
+          "Signing Address": "f1jwpid6t2bzf6dfyyhsjiaemets53qcgn7lgseyq",
+          "Created At": "2025-09-26 04:41:06.239000000 UTC",
+          "Message CID": "bafy2bzacecezd5adlcnwbo7pguqdm5kbebewgudxmcurn2fsbhanpntwpv7ya"
+        }
+      ]
     }
   ]
 }
