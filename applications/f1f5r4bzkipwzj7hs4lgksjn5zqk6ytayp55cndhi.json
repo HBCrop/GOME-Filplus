@@ -1,0 +1,49 @@
+{
+  "Version": "1.3",
+  "ID": "f1f5r4bzkipwzj7hs4lgksjn5zqk6ytayp55cndhi",
+  "Issue Number": "12",
+  "Client": {
+    "Name": "NSF National Center for Atmospheric Research",
+    "Region": "United States",
+    "Industry": "Environment",
+    "Website": "https://gdex.ucar.edu/datasets/d633000/",
+    "Social Media": "https://ncar.ucar.edu/",
+    "Social Media Type": "Other",
+    "Role": "Data Preparer"
+  },
+  "Project": {
+    "Brief history of your project and organization": "NSF NCAR, established in 1960 by NSF and managed by UCAR (120+ universities), delivers advanced resources like supercomputers, aircraft, models, and data to the Earth system science community. It provides AWS ODSP with NetCDF-4 structured 0.25° ERA5 reanalysis, generated via 31 km HRES forecasts and 62 km 4D-Var EDA in IFS CY41r2 with 137 vertical levels, interpolated to 37 pressure levels. Hourly analyses, forecasts, surface/2D parameters, soil, and wave data support ML/AI weather models and climate research, including renewable energy siting. Headquartered in Boulder, CO.",
+    "Is this project associated with other projects/ecosystem stakeholders?": "No",
+    "Describe the data being stored onto Filecoin": "https://registry.opendata.aws/nsf-ncar-era5/\naws s3 ls --no-sign-request s3://nsf-ncar-era5/ 648.5 TiB\n\nNSF NCAR is providing a NetCDF-4 structured version of the 0.25 degree atmospheric ECMWF Reanalysis 5 (ERA5) to the AWS ODSP. ERA5 is produced using high-resolution forecasts (HRES) at 31 kilometer resolution (one fourth the spatial resolution of the operational model) and a 62 kilometer resolution ten member 4D-Var ensemble of data assimilation (EDA) in CY41r2 of ECMWF's Integrated Forecast System (IFS) with 137 hybrid sigma-pressure (model) levels in the vertical, up to a top level of 0.01 hPa. Atmospheric data on these levels are interpolated to 37 pressure levels (the same levels as in ERA-Interim). Surface or single level data are also available, containing 2D parameters such as precipitation, 2 meter temperature, top of atmosphere radiation and vertical integrals over the entire atmosphere. The IFS is coupled to a soil model, the parameters of which are also designated as surface parameters, and an ocean wave model. Generally, the data is available at an hourly frequency and consists of analyses and short (12 hour) forecasts, initialized twice daily from analyses at 06 and 18 UTC. Most analyses parameters are also available from the forecasts. The data are provided in CF-compliant NetCDF4 format files. ERA5 products are used to train ML/AI based weather forecast models and support retrospective climate research use cases, including where to locate solar and wind farms.",
+    "Where was the data currently stored in this dataset sourced from": "AWS Cloud",
+    "How do you plan to prepare the dataset": "We have our own dc facilities. We will use tools like go-car for secondary development. After the download is complete, we will use tools to create the CAR and distribute it to the SP.",
+    "Please share a sample of the data (a link to a file, an image, a table, etc., are good ways to do this.)": "aws s3 ls --no-sign-request s3://nsf-ncar-era5/\nhttps://nsf-ncar-era5.s3.amazonaws.com/index.html",
+    "Confirm that this is a public dataset that can be retrieved by anyone on the network (i.e., no specific permissions or access rights are required to view the data)": "[x] I confirm",
+    "What is the expected retrieval frequency for this data": "Yearly",
+    "For how long do you plan to keep this dataset stored on Filecoin": "1 to 1.5 years",
+    "In which geographies do you plan on making storage deals": "Asia other than Greater China, North America, Greater China",
+    "How will you be distributing your data to storage providers": "HTTP or FTP server, Shipping hard drives",
+    "Please list the provider IDs and location of the storage providers you will be working with. Note that it is a requirement to list a minimum of 5 unique provider IDs, and that your client address will be verified against this list in the future": "f02827565  Vietnam  \nf02826715  United States  \nf02825420  Taiwan  \nf03663680  Hong Kong  \nf03663684  Hong Kong",
+    "Can you confirm that you will follow the Fil+ guideline (Data owner should engage at least 4 SPs and no single SP ID should receive >30% of a client's allocated DataCap)": "Yes"
+  },
+  "Datacap": {
+    "Type": "ldn-v3",
+    "Data Type": "Slingshot",
+    "Total Requested Amount": "3.2PiB",
+    "Single Size Dataset": "648.5TiB",
+    "Replicas": 5,
+    "Weekly Allocation": "1PiB"
+  },
+  "Lifecycle": {
+    "State": "Submitted",
+    "Validated At": "",
+    "Validated By": "",
+    "Active": true,
+    "Updated At": "2025-11-13 14:55:12.833968428 UTC",
+    "Active Request ID": "",
+    "On Chain Address": "f1f5r4bzkipwzj7hs4lgksjn5zqk6ytayp55cndhi",
+    "Multisig Address": "false",
+    "edited": false
+  },
+  "Allocation Requests": []
+}
